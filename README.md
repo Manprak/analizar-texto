@@ -1,1 +1,3 @@
 ## Aquí dejarás tu documentación, por qué decidiste realizar esas optimización y cómo resolvistes los ejercicios de lógica...
+
+Para optimizar convertí el texto a un arreglo de caracteres directamente en el bucle, lo que elimina la necesidad de llamar a charAt, Introduje una variable booleana enPalabra que se activa cuando encontramos una letra y se desactiva al encontrar un espacio. Solo incrementamos totalPalabras cuando salimos de una palabra (al encontrar un espacio). Esto hace que el conteo sea más intuitivo y fácil de seguir.  Agregué una verificación al final del bucle para ver si enPalabra es verdadero al final del texto, lo que garantiza que se cuente la última palabra si no termina en un espacio.
